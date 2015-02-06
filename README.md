@@ -1,26 +1,26 @@
-# HybridKit for iOS
+# GAHybridKit for iOS
 
-HybridKit is a simple, extensible messaging system for your web/native hybrid mobile apps.
+GAHybridKit is a simple, extensible messaging system for your web/native hybrid mobile apps. It extends from HybridKit.
 
 Using [HybridKit for JavaScript](http://github.com/usepropeller/HybridKit-JS), you can send commands from your web page to your native app for processing.
 
 ![Screenshot](http://i.imgur.com/K86x7V1l.png)
 
-HybridKit uses **command handlers** for handling commands sent using the [JavaScript library](http://github.com/usepropeller/HybridKit-JS). HybridKit ships with [useful defaults](#builtin), or you can write completely new ones.
+GAHybridKit uses **command handlers** for handling commands sent using the [JavaScript library](http://github.com/usepropeller/HybridKit-JS). GAHybridKit ships with [useful defaults](#builtin), or you can write completely new ones.
 
 ## Installation
 
-HybridKit for iOS requires [CocoaPods](http://cocoapods.org/). Add it to your `Podfile`:
+GAHybridKit for iOS requires [CocoaPods](http://cocoapods.org/). Add it to your `Podfile`:
 
 ```ruby
-pod 'HybridKit'
+pod 'GAHybridKit'
 ```
 
 Run `pod install` and you're off!
 
 ## Usage
 
-You can utilize HybridKit by using  `HYWebViewController` instead of `UIViewController`. `HYWebViewController` will be ready to catch commands by registering the default command handlers automatically.
+You can utilize GAHybridKit by using  `HYWebViewController` instead of `UIViewController`. `HYWebViewController` will be ready to catch commands by registering the default command handlers automatically.
 
 Setup `HYWebViewController` and load a URL.
 ```Objective-C
@@ -77,16 +77,6 @@ Invoke your new command using the [JavaScript library](http://github.com/useprop
 HybridKit.runCommand("hide_navbar", {hidden: true});
 ```
 
-## Contact
-
-[Mert Dümenci](http://dumenci.me/)
-- [mert@dumenci.me](mailto:mert@dumenci.me)
-- [@mertdumenci](https://twitter.com/mertdumenci)
-
-[Clay Allsopp](http://clayallsopp.com/)
-- [clay@usepropeller.com](mailto:clay@usepropeller.com)
-- [@clayallsopp](https://twitter.com/clayallsopp)
-
 ## License
 
-HybridKit for iOS is available under the MIT license. See the [LICENSE](LICENSE) file for more info.
+GAHybridKit for iOS is available under the MIT license. See the [LICENSE](LICENSE) file for more info.
