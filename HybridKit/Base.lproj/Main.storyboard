@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="6250" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" variant="6xAndEarlier" propertyAccessControl="none" useAutolayout="YES" promptedForUpgradeToXcode5="NO" initialViewController="cnz-7n-wjO">
     <dependencies>
+        <deployment identifier="iOS"/>
         <development version="4600" identifier="xcode"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
@@ -27,9 +28,59 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="048-e3-4e9">
+                                <rect key="frame" x="0.0" y="1" width="320" height="382"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="382" id="a1e-11-FzS"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="vSn-Ki-kgN"/>
+                                </connections>
+                            </webView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mVn-Q6-erm">
+                                <rect key="frame" x="16" y="401" width="191" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="191" id="sEi-3s-q0M"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fyY-uV-Rxn">
+                                <rect key="frame" x="220" y="401" width="76" height="44"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="set title">
+                                    <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="jsCaller:" destination="vXZ-lx-hvc" eventType="touchDown" id="89a-IU-W9o"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="048-e3-4e9" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" type="default" id="1Dk-ax-M2J"/>
+                            <constraint firstItem="mVn-Q6-erm" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="16" id="6He-wx-xjB"/>
+                            <constraint firstAttribute="trailing" secondItem="048-e3-4e9" secondAttribute="trailing" type="default" id="Jiz-Wb-9pB"/>
+                            <constraint firstAttribute="trailing" secondItem="fyY-uV-Rxn" secondAttribute="trailing" constant="24" id="R0J-8M-lst"/>
+                            <constraint firstItem="048-e3-4e9" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="1" id="abL-8i-cn2"/>
+                            <constraint firstItem="mVn-Q6-erm" firstAttribute="bottom" secondItem="fyY-uV-Rxn" secondAttribute="bottom" type="default" id="eCy-RU-HOw"/>
+                            <constraint firstAttribute="bottom" secondItem="mVn-Q6-erm" secondAttribute="bottom" constant="60" id="f40-Rt-745"/>
+                            <constraint firstItem="fyY-uV-Rxn" firstAttribute="baseline" secondItem="mVn-Q6-erm" secondAttribute="baseline" type="default" id="rYh-YS-kfK"/>
+                            <constraint firstItem="mVn-Q6-erm" firstAttribute="top" secondItem="fyY-uV-Rxn" secondAttribute="top" type="default" id="yiC-ST-aPg"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="GAHybridKit" id="mGu-rp-bNg"/>
+                    <connections>
+                        <outlet property="textField" destination="mVn-Q6-erm" id="mtp-aY-g1F"/>
+                        <outlet property="webView" destination="048-e3-4e9" id="Cfc-dH-8Cl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

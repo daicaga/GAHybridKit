@@ -9,6 +9,7 @@
 #import "HYWebViewController.h"
 #import "NSString+HybridKit.h"
 #import "HYDefaultCommandHandlerPack.h"
+#import "GAJavascriptHandler.h"
 
 #import <SVProgressHUD/SVProgressHUD.h>
 
@@ -64,6 +65,7 @@
 
 - (void)registerDefaultCommandHandlers {
     [self registerCommandHandler:[HYDefaultCommandHandlerPack new]];
+    [self registerCommandHandler:[GAJavascriptHandler new]];
 }
 
 #pragma mark - Internal command handling
@@ -90,8 +92,9 @@
 - (BOOL)runJSONCommand:(NSDictionary *)json {
     HY_LOG(@"Got JSON command : %@", json);
     
+    NSString *methodName = json[@"method"];
     NSString *commandString = json[@"command"];
-    if (!commandString) return NO;
+    if (!commandString && !methodName) return NO;
     
     BOOL executed = NO;
 
@@ -101,7 +104,12 @@
     
     if (!executed) {
         for (id <HYWebViewCommand> commandHandler in self.commandHandlers) {
-            if ([commandHandler respondsToCommandString:commandString]) {
+            if(methodName && [commandHandler isKindOfClass:[GAJavascriptHandler class]]) {
+                [commandHandler handleJavascriptCallWithMethod:methodName dictionary:json];
+                executed = YES;
+                break;
+            }
+            else if ([commandHandler respondsToCommandString:commandString]) {
                 [commandHandler handleCommandString:commandString dictionary:json];
                 executed = YES;
                 break;

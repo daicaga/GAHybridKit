@@ -2,6 +2,7 @@
 <head>
     <title>HybridKit Tests</title>
     <script type='text/javascript' src='hybridkit.min.js'></script>
+    <script type='text/javascript' src='jquery.js'></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel='stylesheet' type='text/css' href='normalize.css' media='screen'>
     <link rel='stylesheet' type='text/css' href='syntax.css' media='screen'>
@@ -79,7 +80,7 @@
 </head>
 <body>
     <div class='header'>
-        <h1>HybridKit</h1>
+        <h1 id="demo_title">HybridKit</h1>
         <h2>Demo</h2>
     </div>
 
@@ -144,6 +145,14 @@
 
 <script>
     HybridKit.runCommand("set_background_color", {color: "f8f8f8"});
+    
+    (function () {
+        // call from native
+        window.setTitle = function (info) {
+            $("#demo_title").html(info['title']);
+     
+        }
+     })();
 </script>
 </body>
 </html>

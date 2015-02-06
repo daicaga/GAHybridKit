@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11CAE5011A8474AA006179EA /* GAJavascriptHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 11CAE5001A8474AA006179EA /* GAJavascriptHandler.m */; };
+		11CAE5051A84938F006179EA /* jquery.js in Resources */ = {isa = PBXBuildFile; fileRef = 11CAE5041A84938F006179EA /* jquery.js */; };
 		413ADDA81799A6B500774838 /* hybridkit.js in Sources */ = {isa = PBXBuildFile; fileRef = 413ADDA31799A6B500774838 /* hybridkit.js */; };
 		413ADDA91799A6B500774838 /* hybridkit.min.js in Sources */ = {isa = PBXBuildFile; fileRef = 413ADDA41799A6B500774838 /* hybridkit.min.js */; };
 		413ADDAC1799A6B500774838 /* spec.js in Sources */ = {isa = PBXBuildFile; fileRef = 413ADDA71799A6B500774838 /* spec.js */; };
@@ -46,6 +48,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		11CAE4FF1A8474AA006179EA /* GAJavascriptHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GAJavascriptHandler.h; path = HybridKit/GAJavascriptHandler.h; sourceTree = "<group>"; };
+		11CAE5001A8474AA006179EA /* GAJavascriptHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GAJavascriptHandler.m; path = HybridKit/GAJavascriptHandler.m; sourceTree = "<group>"; };
+		11CAE5041A84938F006179EA /* jquery.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = jquery.js; path = "Test HTML/jquery.js"; sourceTree = "<group>"; };
 		3D2DF7529C5B41F7A429BD3B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		413ADDA31799A6B500774838 /* hybridkit.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = hybridkit.js; sourceTree = "<group>"; };
 		413ADDA41799A6B500774838 /* hybridkit.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = hybridkit.min.js; sourceTree = "<group>"; };
@@ -116,6 +121,7 @@
 		413ADDA11799A69500774838 /* Test HTML */ = {
 			isa = PBXGroup;
 			children = (
+				11CAE5041A84938F006179EA /* jquery.js */,
 				413ADDAD1799B7ED00774838 /* normalize.css */,
 				413ADDAE1799B7ED00774838 /* syntax.css */,
 				413ADDAF1799B7ED00774838 /* test_html.html */,
@@ -234,6 +240,8 @@
 				4152F643179854910069A0E5 /* HYWebViewCommand.h */,
 				4152F644179854910069A0E5 /* HYWebViewCommand.m */,
 				4152F645179854910069A0E5 /* HYWebViewCommandProtocol.h */,
+				11CAE4FF1A8474AA006179EA /* GAJavascriptHandler.h */,
+				11CAE5001A8474AA006179EA /* GAJavascriptHandler.m */,
 			);
 			name = "Command Handler";
 			sourceTree = "<group>";
@@ -293,7 +301,7 @@
 		4152F5F3179854420069A0E5 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = HY;
+				CLASSPREFIX = GA;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = Propeller;
 				TargetAttributes = {
@@ -332,6 +340,7 @@
 				4152F609179854430069A0E5 /* InfoPlist.strings in Resources */,
 				413ADDB01799B7ED00774838 /* normalize.css in Resources */,
 				413ADDB21799B7ED00774838 /* test_html.html in Resources */,
+				11CAE5051A84938F006179EA /* jquery.js in Resources */,
 				4152F612179854430069A0E5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -392,6 +401,7 @@
 				4152F60B179854430069A0E5 /* main.m in Sources */,
 				4152F64A179854910069A0E5 /* HYDefaultCommandHandlerPack.m in Sources */,
 				413ADDAC1799A6B500774838 /* spec.js in Sources */,
+				11CAE5011A8474AA006179EA /* GAJavascriptHandler.m in Sources */,
 				4152F64C179854910069A0E5 /* HYWebViewController.m in Sources */,
 				4152F60F179854430069A0E5 /* HYAppDelegate.m in Sources */,
 			);

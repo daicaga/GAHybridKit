@@ -20,6 +20,12 @@
 
 @property (nonatomic, assign) HYWebViewController *webViewController;
 
+@optional
+
+/**
+ */
+- (void)handleJavascriptCallWithMethod:(NSString *)methodName dictionary:(NSDictionary *)jsonDictionary;
+
 @required
 
 /**

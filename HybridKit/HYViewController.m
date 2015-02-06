@@ -13,6 +13,7 @@
 #endif
 
 @interface HYViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *textField;
 
 @end
 
@@ -26,12 +27,12 @@
     NSString *HTMLString = [NSString stringWithContentsOfFile:testHTMLPath encoding:NSUTF8StringEncoding error:nil];
 
     self.htmlString = HTMLString;
-    self.delegate = self;
-  
-    if (IS_IOS7) {
-        self.webView.scrollView.scrollIndicatorInsets = self.webView.scrollView.contentInset = UIEdgeInsetsMake(66, 0, 0, 0);
-    }
 }
 
+- (IBAction)jsCaller:(id)sender {
+    NSString *newTitle = self.textField.text;
+    NSDictionary *dic = @{@"method":@"setTitle", @"title":newTitle};
+    [self runJSONCommand:dic];
+}
 
 @end
