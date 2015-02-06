@@ -303,7 +303,7 @@
 			attributes = {
 				CLASSPREFIX = GA;
 				LastUpgradeCheck = 0500;
-				ORGANIZATIONNAME = Propeller;
+				ORGANIZATIONNAME = DaCa.Ga;
 				TargetAttributes = {
 					4152F61B179854430069A0E5 = {
 						TestTargetID = 4152F5FA179854430069A0E5;

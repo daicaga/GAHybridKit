@@ -40,7 +40,7 @@
                                 </connections>
                             </webView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mVn-Q6-erm">
-                                <rect key="frame" x="16" y="401" width="191" height="43"/>
+                                <rect key="frame" x="16" y="441" width="191" height="43"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="191" id="sEi-3s-q0M"/>
                                 </constraints>
@@ -48,7 +48,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fyY-uV-Rxn">
-                                <rect key="frame" x="220" y="401" width="76" height="44"/>
+                                <rect key="frame" x="220" y="441" width="76" height="44"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="set title">
@@ -71,7 +71,7 @@
                             <constraint firstAttribute="trailing" secondItem="fyY-uV-Rxn" secondAttribute="trailing" constant="24" id="R0J-8M-lst"/>
                             <constraint firstItem="048-e3-4e9" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="1" id="abL-8i-cn2"/>
                             <constraint firstItem="mVn-Q6-erm" firstAttribute="bottom" secondItem="fyY-uV-Rxn" secondAttribute="bottom" type="default" id="eCy-RU-HOw"/>
-                            <constraint firstAttribute="bottom" secondItem="mVn-Q6-erm" secondAttribute="bottom" constant="60" id="f40-Rt-745"/>
+                            <constraint firstAttribute="bottom" secondItem="mVn-Q6-erm" secondAttribute="bottom" constant="20" type="user" id="f40-Rt-745"/>
                             <constraint firstItem="fyY-uV-Rxn" firstAttribute="baseline" secondItem="mVn-Q6-erm" secondAttribute="baseline" type="default" id="rYh-YS-kfK"/>
                             <constraint firstItem="mVn-Q6-erm" firstAttribute="top" secondItem="fyY-uV-Rxn" secondAttribute="top" type="default" id="yiC-ST-aPg"/>
                         </constraints>

@@ -11,11 +11,8 @@
 /**
  `GAJavascriptHandler` is the built-in command handler pack for `GAHybridKit`.
  
- It can handle:
-    + `js-call` : call a method in javascript.
- commands.
- ---------------------
- Note: We don't use 'javascript' command because it will conflict with HYDefaultCommandHandlerPack
+ It can handle the javascript method calling.
+ We don't use 'command' command key in dictionary data.
  */
 
 @interface GAJavascriptHandler : HYWebViewCommand
