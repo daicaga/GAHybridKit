@@ -530,7 +530,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HybridKit/GAHybridKit-Prefix.pch";
 				INFOPLIST_FILE = "HybridKit/GAHybridKit-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = GAHybridKit;
 				WRAPPER_EXTENSION = app;
 			};
@@ -545,7 +545,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HybridKit/GAHybridKit-Prefix.pch";
 				INFOPLIST_FILE = "HybridKit/GAHybridKit-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = GAHybridKit;
 				WRAPPER_EXTENSION = app;
 			};

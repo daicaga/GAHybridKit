@@ -2,8 +2,8 @@
 //  GAJavascriptHandler.h
 //  GAHybridKit
 //
-//  Created by Ga on 2/6/15.
-//  Copyright (c) 2015 Propeller. All rights reserved.
+//  Created by DaiCaGa on 2/6/15.
+//  Copyright (c) 2015 Ga co. All rights reserved.
 //
 
 #import "HYWebViewCommand.h"
