@@ -1,6 +1,6 @@
 PODS:
   - BlocksKit (2.2.5):
-    - BlocksKit/All
+    - BlocksKit/All (= 2.2.5)
   - BlocksKit/All (2.2.5):
     - BlocksKit/Core
     - BlocksKit/DynamicDelegate
@@ -16,7 +16,7 @@ PODS:
     - BlocksKit/DynamicDelegate
   - HexColors (2.2.1)
   - SVProgressHUD (1.0)
-  - TransitionKit (2.1.0)
+  - TransitionKit (2.1.1)
 
 DEPENDENCIES:
   - BlocksKit (~> 2.2)
@@ -28,6 +28,6 @@ SPEC CHECKSUMS:
   BlocksKit: 4439e7f30a9f90743462ca63545a15c1f4304cef
   HexColors: 01384d2bbe8dc4ffa43c3b4135db6e976952d153
   SVProgressHUD: 5034c6e22b8c2ca3e09402e48d41ed0340aa1c50
-  TransitionKit: 6a6f3ddda38ae758778aa889dcb930e4f8d64edc
+  TransitionKit: 9ce324caba25cb0a4c9f3334302d89685595455c
 
-COCOAPODS: 0.33.1
+COCOAPODS: 0.35.0

@@ -181,7 +181,8 @@
         }];
 
         [loading setDidExitStateBlock:^(TKState *state, TKTransition *transition) {
-            self.navigationItem.rightBarButtonItem = nil;
+            // #daicaga: it will make right navigation bar item is hidden.
+            //self.navigationItem.rightBarButtonItem = nil;
             self.activityIndicator.hidden = YES;
         }];
 
