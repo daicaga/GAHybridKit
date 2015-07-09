@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.license = {:type => 'MIT', :file => 'LICENSE'}
 
   s.dependency 'SVProgressHUD', '~> 1.0'
-  s.dependency 'HexColors', '~> 2.0'
+  s.dependency 'HexColors', '2.2.1'
   s.dependency 'TransitionKit', '~> 2.1'
   s.dependency 'BlocksKit', '~> 2.2'
 end
